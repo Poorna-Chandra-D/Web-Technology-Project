@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="photo">
+        <p>Photo Details</p>
+        <p>Picture</p>
+        <label for="title">Title</label>
+        <input id="title" type="text" />
+        <label for="des">Description</label>
+        <textarea id="des" cols="30" rows="4"></textarea>
+        <div class="cols">
+            <div class="col-1">
+                <label for="containers">Containers</label>
+                <input id="containers" type="text" />
+                <label for="country">Country</label>
+                <input id="country" type="text" />
+                <label for="city">City</label>
+                <input id="city" type="text" />
+                <label for="rating">Rating</label>
+                <input id="rating" type="range" />
+                <label for="color-collection">Color Collection</label>
+                <input id="color-collection" type="color" />
+            </div>
+            <div class="col-2">
+                <div class="selection">
+                    <label for="copyright">Copyright?</label><br>
+                    <input type="radio" name="copyright" id="rights">
+                    <label for="rights">All Rights Reserved</label><br>
+                    <input type="radio" name="copyright" id="Creative commons">
+                    <label for="creative">Creative Commons</label>
+                </div>
+                <div class="selection">
+                    <label>Creative Commons</label><br>
+                    <input type="checkbox" name="creative" id="non-commercial">
+                    <label for="non-commercial">Non Commercial</label><br>
+                    <input type="checkbox" name="creative" id="shareable">
+                    <label for="shareable">Shareable</label>
+                </div>
+                <div class="date">
+                    <label for="date">
+            Date taken
+          </label>
+                    <input type="date" placeholder="Time taken">
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <button type="submit">Submit</button>
+            <button type="reset">Clear Form</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

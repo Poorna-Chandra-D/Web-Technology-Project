@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4rem;
+    flex-direction: column;
+    min-height: 90vh;
+}
+
+.movies,
+.books,
+.photo {
+    margin-bottom: 4rem;
+}
+
+.movies td,
+.movies th {
+    border: 1px solid black;
+}
+
+.movies td {
+    width: 22rem;
+    height: 4rem;
+    position: relative;
+}
+
+.movies span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.movies td[rowspan='2'] {
+    margin: auto;
+    padding: 2rem 1rem;
+}
+
+.movies td[rowspan='2'] table {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+
+.movies td[rowspan='2'] table td {
+    width: 4rem;
+    height: 2rem;
+}
+
+.books {
+    width: 90%;
+    text-align: center;
+}
+
+.books table {
+    width: 100%;
+}
+
+.books td,
+.books th {
+    border: 1px solid black;
+    height: 1rem;
+}
+
+.books th {
+    text-align: left;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40rem;
+    font-weight: bold;
+    width: 80%;
+}
+
+.photo p {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1em;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.photo p:nth-of-type(2) {
+    text-align: left;
+    height: 5rem;
+}
+
+.photo #des {
+    resize: unset;
+    height: 5rem;
+}
+
+.photo .cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 20rem;
+    width: 100%;
+}
+
+.photo .col-1,
+.photo .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-between;
+    width: 40%;
+    height: 100%;
+}
+
+.photo .selection {
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+}
+
+.photo .btns {
+    text-align: center;
+}
+
+.photo button {
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    padding: 0.2em 1em;
+    font-weight: bold;
+}
